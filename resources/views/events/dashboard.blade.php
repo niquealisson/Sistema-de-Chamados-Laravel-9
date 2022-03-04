@@ -31,7 +31,6 @@
                         @endif
                     </td>
                     <td><a href="events/edit/{{ $event->id }}" class="btn btn-info edit-btn"><ion-icon name="create"></ion-icon>Editar</a>
-                        @if ($event->user_id == 124154)
                         <form action="/events/{{ $event->id }}" method="post">
                             @csrf
                             @method('DELETE')
@@ -39,7 +38,6 @@
                                 <ion-icon name="trash"></ion-icon>Deletar
                             </button>
                         </form>
-                        @endif
                 </tr>
             @endforeach    
         </tbody>
