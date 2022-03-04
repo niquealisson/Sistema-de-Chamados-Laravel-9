@@ -26,3 +26,5 @@ Route::POST('/events/join/{id}',[EventController::class, 'joinSolicitacao'])->mi
 
 Route::delete('/events/leave/{id}',[EventController::class, 'leaveSolicitacao'])->middleware('auth');
 
+require __DIR__.'/auth.php';
+

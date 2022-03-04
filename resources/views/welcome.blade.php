@@ -11,6 +11,7 @@
                 <input type="text" id="search" name="search" class= "form-control" placeholder="Search...">
         </form>
 </div>
+@can('admin')
 <div id="event-container" class="coll-md-12">
         @if ($search)
         <h2>Buscando por: {{ $search }}</h2>
@@ -44,7 +45,7 @@
                 @endif
         </div>
 </div>  
-
+@endcan
 
 
 @endsection

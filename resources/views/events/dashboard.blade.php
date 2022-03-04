@@ -47,6 +47,8 @@
     @else
     <p>Você ainda não tem eventos, <a href="/events/create">criar evento</a></p>
     @endif
+
+    @can('admin')
 </div>
 <div class="col-md-10 offset-md-1 dashboard-title-container">
     <h1>Solicitaçoes Aceitas</h1>
@@ -89,4 +91,5 @@
     <p>Você ainda não aceitou nem uma Solicitação <a href="/"> Veja todas as solicitações</a> </p>
     @endif
 </div>
+@endcan
 @endsection

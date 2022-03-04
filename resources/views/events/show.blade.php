@@ -26,6 +26,7 @@
             </p>
             <p class="event-owner"><ion-icon name="person"></ion-icon>{{ $eventOwner['name'] }} </p>
             @if(!$hasUserJoined)
+            @can('admin')
             <form action="/events/join/{{ $event->id }}" method="post">
                 @csrf
                 <a href="/events/join/{{ $event->id }}" 
@@ -36,6 +37,7 @@
                     Começar
                 </a>
             </form>
+            @endcan
             @else
             <p class="already-joined-msg"> Você ja Aceitou a Solictação!</p>
             @endif
@@ -53,10 +55,12 @@
         </div>
     </div>
 </div>
+@can('admin')
 <div class="col-md-10 offset-md-1">
     <div class="row">
         <textarea name="Resposta" id="reposta" cols="3" rows="3" placeholder="Resposta">
-</textarea>
+        </textarea>
     </div>
 </div>
+@endcan
 @endsection
