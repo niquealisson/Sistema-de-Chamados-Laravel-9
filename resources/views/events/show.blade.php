@@ -57,8 +57,7 @@
 </div>
 <form action="" method="POST" enctype="multipart/form-data">
         <div class="col-md-6 offset" id="coment">
-            <label for="title">Comentar</label>
-            <textarea class="form-control" id="coment" name="" placeholder="Resposta">{{ old('coment') }}</textarea>
+            <textarea class="form-control" id="coment" name="" placeholder="Resposta"></textarea>
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-primary">
