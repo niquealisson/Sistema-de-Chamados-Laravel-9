@@ -20,17 +20,17 @@
     <form action="/events" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
-            <label for="title">Logo da empresa: </label>
+            <label for="title">Imagem Exemplo da solicitação, Ou logo da Empresa: </label>
             <input type="file" id="image" name="image" class="form-contro-file"value="{{ old('image') }}">
         </div>
 
 
         <div class="form-group">
-            <label for="title">Solicitação: </label>
+            <label for="title">Nome da Solicitação: </label>
             <input type="text" class="form-control" id="title" name="title" placeholder="Nome da Solicitação" value="{{ old('title') }}">
         </div>
         <div class="form-group">
-            <label for="title">empresa: </label>
+            <label for="title">Nome da Empresa: </label>
             <input type="text" class="form-control" id="empresa" name="empresa" placeholder="Nome da Empresa" value="{{ old('empresa') }}">
         </div>
 

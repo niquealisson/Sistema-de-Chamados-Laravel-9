@@ -55,12 +55,15 @@
         </div>
     </div>
 </div>
-@can('admin')
-<div class="col-md-10 offset-md-1">
-    <div class="row">
-        <textarea name="Resposta" id="reposta" cols="3" rows="3" placeholder="Resposta">
-        </textarea>
-    </div>
-</div>
-@endcan
+<form action="" method="POST" enctype="multipart/form-data">
+        <div class="col-md-6 offset" id="coment">
+            <label for="title">Comentar</label>
+            <textarea class="form-control" id="coment" name="" placeholder="Resposta">{{ old('coment') }}</textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">
+                Enviar
+            </button>
+        </div>
+</form>
 @endsection
