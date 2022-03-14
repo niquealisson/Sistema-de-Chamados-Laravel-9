@@ -30,6 +30,14 @@ header {
     border: 2px solid #0000ff;
 }
 
+.btn-submit{
+    background-color: #000080;
+    border: 1px solid #0000ff;
+    width: 10%;
+    margin: 0 auto;
+    text-align: center;
+}
+
 
 .btn-primary:hover{
     background-color: #0000ff;

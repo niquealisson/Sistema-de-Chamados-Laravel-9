@@ -55,14 +55,10 @@
         </div>
     </div>
 </div>
-<form action="" method="POST" enctype="multipart/form-data">
-        <div class="col-md-6 offset" id="coment">
-            <textarea class="form-control" id="coment" name="" placeholder="Resposta"></textarea>
-        </div>
-        <div class="form-group">
-            <button type="submit" class="btn btn-primary">
-                Enviar
-            </button>
-        </div>
-</form>
+
+<button type="submit" class="btn btn-submit" id= "resposta-submit">
+    <a href="/comments">
+        Responder
+    </a>
+</button>
 @endsection
