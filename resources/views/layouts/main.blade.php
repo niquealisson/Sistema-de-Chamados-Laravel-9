@@ -73,7 +73,8 @@
 
     </main>
         <footer>
-            <p>SATI TIBAN &copy; 2022</p>
+            <p> SATI &copy; 2021
+            </p>
         </footer>
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     </body>
